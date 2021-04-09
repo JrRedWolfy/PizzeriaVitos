@@ -49,6 +49,7 @@
                   <Component id="jPasswordFieldContrasena" pref="298" max="32767" attributes="0"/>
                   <Component id="jLabelError" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextFieldUser" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jLabelError2" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
           </Group>
@@ -68,8 +69,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPasswordFieldContrasena" min="-2" pref="37" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabelError" pref="36" max="32767" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabelError" min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabelError2" min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
               <Component id="jButtonEntrar" min="-2" pref="42" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -105,8 +108,20 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelError">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPasswordFieldContrasena">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelError2">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

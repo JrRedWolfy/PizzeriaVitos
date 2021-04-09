@@ -36,6 +36,7 @@ public class Login extends javax.swing.JFrame {
         jLabelUser = new javax.swing.JLabel();
         jLabelError = new javax.swing.JLabel();
         jPasswordFieldContrasena = new javax.swing.JPasswordField();
+        jLabelError2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,6 +52,10 @@ public class Login extends javax.swing.JFrame {
         jLabelContrase.setText("CONTRASEÑA");
 
         jLabelUser.setText("USUARIO");
+
+        jLabelError.setForeground(new java.awt.Color(255, 0, 0));
+
+        jLabelError2.setForeground(new java.awt.Color(255, 0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,7 +80,8 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPasswordFieldContrasena, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                     .addComponent(jLabelError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextFieldUser))
+                    .addComponent(jTextFieldUser)
+                    .addComponent(jLabelError2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(76, 76, 76))
         );
         layout.setVerticalGroup(
@@ -92,8 +98,10 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPasswordFieldContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelError, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelError, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelError2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jButtonEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -125,6 +133,8 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Usuario o contraseña erroneos");
             jTextFieldUser.setText("");
             jPasswordFieldContrasena.setText("");
+            jLabelError.setText("¿Se ha olvidado de su contraseña?");
+            jLabelError2.setText("Pues se jode, no hay opción de recuperación");
         }
         
         
@@ -179,6 +189,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jImagen;
     private javax.swing.JLabel jLabelContrase;
     private javax.swing.JLabel jLabelError;
+    private javax.swing.JLabel jLabelError2;
     private javax.swing.JLabel jLabelUser;
     private javax.swing.JPasswordField jPasswordFieldContrasena;
     private javax.swing.JTextField jTextFieldUser;
